@@ -1,4 +1,20 @@
-export default async function ProductDetails({ params }: { params: Promise<{ productId: string }> }) {
+
+type ProductDetailsProps = {
+    params: Promise<{
+        productId: string;
+    }>;                                                                                                      
+}
+
+export async function generateMetadata ({ params }: ProductDetailsProps) {
+    const { productId } = await params;
+    
+    return {
+        title: `Product Details for ${productId}`,
+        description: `This is the product details page for product ID: ${productId}.`,
+    }
+}
+
+export default async function ProductDetails({ params }: ProductDetailsProps) {
     const { productId } = await params;
     
     return (
