@@ -1,5 +1,8 @@
-export default function ComplexDashboardLayout({children, users, revenue, notifications}:{ children: React.ReactNode; users: React.ReactNode; revenue: React.ReactNode; notifications: React.ReactNode }) {
-    return (
+import Card from "@/components/card";
+
+export default function ComplexDashboardLayout({children, users, revenue, notifications, login}:{ children: React.ReactNode; users: React.ReactNode; revenue: React.ReactNode; notifications: React.ReactNode; login: React.ReactNode }) {
+    const isLoggedIn = true;
+    return isLoggedIn? (
         <>
         <div>
             {children}
@@ -15,5 +18,9 @@ export default function ComplexDashboardLayout({children, users, revenue, notifi
                 {notifications} </div>
         </div>
         </>
+    ): (
+        <Card>
+            login
+        </Card>
     )
 }
