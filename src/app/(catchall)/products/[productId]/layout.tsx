@@ -1,4 +1,11 @@
+import { getRandomInt } from "./reviews/[reviewId]/page";
+
 export default function ProductLayout({children}: {children: React.ReactNode}) {
+  const random = getRandomInt(2);
+  if (random === 1) {
+    throw new Error("Error loading product details.");
+  } 
+  
   return (
     <div>
       <header
