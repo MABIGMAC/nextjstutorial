@@ -12,7 +12,7 @@ export default function Pages({params, searchParams}: {
     
     return (
         <div>
-            <h1>Article Details for {articlesId}</h1>
+            <h1>Article Details for {articlesId} {lang}</h1>
             <p>This is the article details page.</p>
             <Link href={`/articles/${articlesId}?lang=en`}>English</Link>
             <Link href={`/articles/${articlesId}?lang=es`}>Spanish</Link>
