@@ -6,8 +6,8 @@ export default function Home() {
     <Link href="/about">
     Go to About Page
     </Link>
-    <Link href="/products">
-    Go to Products Page
-    </Link>
+    <Link href="/products">Go to Products Page</Link>
+    <Link href="/articles/breaking-news-123?lang=en">Read in English</Link>
+    <Link href="/articles/breaking-news-123?lang=fr">Read in French</Link>
     </>)
 }
