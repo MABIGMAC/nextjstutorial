@@ -1,12 +1,14 @@
+"use client"
 import Link from "next/link";
+import { use } from "react";
 
-export default async function Pages({params, searchParams}: {
+export default function Pages({params, searchParams}: {
     params: Promise<{articlesId: string}>
     searchParams: Promise<{lang?: "en" | "es" | "fr"}>;
 }
 ) {
-    const { articlesId } = await params;
-    const { lang="en" } = await searchParams;
+    const { articlesId } = use(params);
+    const { lang="en" } = use(searchParams);
     
     return (
         <div>
