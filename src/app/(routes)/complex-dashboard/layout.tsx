@@ -1,6 +1,6 @@
 import Card from "@/components/card";
 
-export default function ComplexDashboardLayout({children, users, revenue, notifications, login}:{ children: React.ReactNode; users: React.ReactNode; revenue: React.ReactNode; notifications: React.ReactNode; login: React.ReactNode }) {
+export default function ComplexDashboardLayout({children, users, revenue, notifications}:{ children: React.ReactNode; users: React.ReactNode; revenue: React.ReactNode; notifications: React.ReactNode; login: React.ReactNode }) {
     const isLoggedIn = true;
     return isLoggedIn? (
         <>

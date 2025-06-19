@@ -1,4 +1,3 @@
-import { ErrorWrapper } from './error-wrapper';
 import './globals.css';
 
 export const metadata = {
