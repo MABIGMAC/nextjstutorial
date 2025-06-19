@@ -1,7 +1,9 @@
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
+  redirect("/profile");
   const requestHeaders = new Headers(request.headers)
   console.log("Request Headers:", requestHeaders);
   console.log("the auth token is:", requestHeaders.get("authorization"));
