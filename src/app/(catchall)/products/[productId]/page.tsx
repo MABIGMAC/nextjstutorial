@@ -5,6 +5,8 @@ type ProductDetailsProps = {
     }>;                                                                                                      
 }
 
+export const dynamicParams = false; // Enable dynamic params for this page
+
 export async function generateStaticParams() {
     return [
         { productId: '1' },
