@@ -5,6 +5,14 @@ type ProductDetailsProps = {
     }>;                                                                                                      
 }
 
+export async function generateStaticParams() {
+    return [
+        { productId: '1' },
+        { productId: '2' },
+        { productId: '3' },
+    ]
+}
+
 export async function generateMetadata ({ params }: ProductDetailsProps) {
     const { productId } = await params;
     
