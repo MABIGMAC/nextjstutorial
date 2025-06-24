@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation";
 
-export function getRandomInt(max: number): number {
-    return Math.floor(Math.random() * max);
-}
+// export function getRandomInt(max: number): number {
+//     return Math.floor(Math.random() * max);
+// }
 
 export default async function review({params}: {params: Promise<{
     productId: string,
