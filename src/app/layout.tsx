@@ -1,6 +1,7 @@
 import { ClerkProvider } from '@clerk/nextjs';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import Navigation from '@/components/navigation';
 
 export const metadata = {
   title: 'NextJsTutorial',
@@ -24,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           >
           <p>Header</p>
         </header>
-
+          <Navigation/>
         {children}
         
         <footer
