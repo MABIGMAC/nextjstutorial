@@ -6,9 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:prisma": "npx prisma migrate dev"
   },
   "dependencies": {
+    "@prisma/client": "^6.11.1",
     "client-only": "^0.0.1",
     "next": "15.3.3",
     "react": "^19.0.0",
