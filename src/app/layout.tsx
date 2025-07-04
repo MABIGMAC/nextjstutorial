@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -10,6 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <ThemeProvider>
 
@@ -36,5 +38,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </body>
         </ThemeProvider>
     </html>
+    </ClerkProvider>
   );
 }
