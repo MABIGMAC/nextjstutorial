@@ -1,9 +1,11 @@
 import NavBar from "@/components/navbar";
+import Search from "@/components/search";
 import Link from "next/link";
 
 export default function Home() {
     return (<>
     <NavBar/>
+    <Search/>
     <h1>Hello World@</h1>
     <Link href="/render-about">
     render about
