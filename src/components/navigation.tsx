@@ -26,6 +26,9 @@ export default function Navigation() {
                 <Link href={"/user-profile"} style={{ color: '#fff', textDecoration: 'none' }}>
                 Profile
                 </Link>
+                <Link href={"/aa-dashboard"} style={{ color: '#fff', textDecoration: 'none' }}>
+                Dashboard
+                </Link>
                 </SignedIn>
             </div>
         </nav>
