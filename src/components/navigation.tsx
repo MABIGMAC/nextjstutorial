@@ -1,4 +1,4 @@
-import { SignInButton, SignOutButton } from '@clerk/nextjs';
+import { SignInButton, SignOutButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 
 export default function Navigation() {
@@ -17,6 +17,10 @@ export default function Navigation() {
             <div style={{ display: 'flex', gap: '1rem', color: '#fff' }}>
                 <SignInButton mode="modal"/>
                 <SignOutButton/>
+                {/* <UserButton /> */}
+                <Link href={"/user-profile"} style={{ color: '#fff', textDecoration: 'none' }}>
+                Profile
+                </Link>
             </div>
         </nav>
     );
