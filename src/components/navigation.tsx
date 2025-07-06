@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, SignOutButton, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut, SignInButton, SignOutButton, SignUpButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 
 export default function Navigation() {
@@ -17,7 +17,10 @@ export default function Navigation() {
             <div style={{ display: 'flex', gap: '1rem', color: '#fff' }}>
                 <SignedOut>
 
-                <SignInButton mode="modal"/>
+                <SignInButton >
+                    <button className=' px-2 py-1 text-sm border border-neutral-300' >Sign in</button>
+                </SignInButton>
+                <SignUpButton/>
                 </SignedOut>
                 <SignedIn>
 
